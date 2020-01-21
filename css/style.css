@@ -22,6 +22,10 @@ div.topnav {
     background-color: yellow;
 }
 
+div.topnav > ul > li > img {
+    width: 15px;
+    height: 15px;
+}
 
 /* .container {
     width: 500px;
