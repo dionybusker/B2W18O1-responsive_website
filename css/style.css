@@ -13,18 +13,22 @@ html {
     in de media query komt dan alle styling voor als het scherm groter is dan voor op de mobiel
 */
 
-
-
 body {
     background-color: lightgrey;
 }
 
-.container {
+div.topnav {
+    overflow: hidden;
+    background-color: yellow;
+}
+
+
+/* .container {
     width: 500px;
     height: 250px;
     background-color: white;
     margin: 0 auto;
-}
+} */
 
 /* .icon-line {
     width: 75px;
