@@ -1,3 +1,14 @@
-body {
+html {
     font-family: 'Archivo', sans-serif;
+    font-size: 12px; /* standaard font-size voor de hele htnml */
 }
+
+@media (min-width: 678px) {
+    /* hier zal uiteindelijk de styling komen voor groter dan 678px */
+}
+
+
+/*
+    mobile-first: eerst de website maken voor op mobiele grootte
+    in de media query komt dan alle styling voor als het scherm groter is dan voor op de mobiel
+*/
