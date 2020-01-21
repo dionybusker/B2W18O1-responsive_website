@@ -3,12 +3,30 @@ html {
     font-size: 12px; /* standaard font-size voor de hele htnml */
 }
 
-@media (min-width: 678px) {
-    /* hier zal uiteindelijk de styling komen voor groter dan 678px */
-}
+/* @media (min-width: 678px) {
+    hier zal uiteindelijk de styling komen voor groter dan 678px
+} */
 
 
 /*
     mobile-first: eerst de website maken voor op mobiele grootte
     in de media query komt dan alle styling voor als het scherm groter is dan voor op de mobiel
 */
+
+
+
+body {
+    background-color: lightgrey;
+}
+
+.container {
+    width: 500px;
+    height: 250px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+/* .icon-line {
+    width: 75px;
+    height: 50px;
+} */
