@@ -88,7 +88,7 @@ body {
     line-height: 1;
 }
 
-@media (min-width: 678px) {
+@media (min-width: 768px) {
     #container {
         width: 75%;
         margin: 0 auto;
