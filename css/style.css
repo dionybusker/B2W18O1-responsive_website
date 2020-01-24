@@ -19,116 +19,61 @@ body {
     padding: 0;
 }
 
-#menu ul {
+
+
+/* div > ul > li > img */
+/* div#topnav-dropdown > ul > li.icons-top > img */
+/* div.topnav.response > ul > li.icons-top > img */
+
+
+#menu-button {
+    width: 100%;
+    background-color: #EBD84C;
+    text-align: left;
+    padding: 1em;
+    cursor: pointer;
+}
+
+#menu-top {
+    list-style-type: none;
+    height: 0px;
+    overflow: hidden;
+    background-color: #EBD84C;
     margin: 0;
-    padding: 0;
 }
 
-#menu .main-menu {
-    display: none;
-}
-
-#tm:checked + .main-menu {
-    display: block;
-}
-
-#menu input[type="checkbox"] {
-    display: none;
-}
-
-/* #menu li, #toggle-menu {
-    border-style: solid;
-    border-color: rgba(0, 0, 0, .05);
+/* li {
+    background-color: white;
 } */
 
-/* #menu li, #toggle-menu {
-    border-width: 0 0 1px;
-} */
-
-#menu > ul > li > a {
-    text-decoration: none;
-    color: white;
-}
-
-#menu > ul > li > img, #menu > ul > li > a > img {
+#menu-top img.icons-top, #menu-top img.icons-social-media {
     width: 15px;
     height: 15px;
     margin-right: 5px;
 }
 
-#menu li, #toggle-menu, #menu li {
-    position: relative;
-    display: block;
-    color: black;
-}
-
-#menu, #toggle-menu {
-    background-color: #EBD84C;
-}
-
-#toggle-menu, #menu li {
-    padding: 15px;
-}
-
-#menu label.drop-icon {
-    font-size: 2rem;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    border: 1px solid #EDDD5E;
-    color: white;
-    cursor: pointer;
-}
-
-#menu label.drop-icon:hover {
-    background-color: #EDDD5E;
-}
-
-#menu .drop-icon {
-    line-height: 1;
-}
-
 @media (min-width: 768px) {
-    #container {
-        width: 75%;
-        margin: 0 auto;
-    }
-
-    .main-menu {
-        background-color: #EBD84C;
-        height: 4em;
-    }
-
-    #menu .main-menu {
-        display: block;
-    }
-
-    #toggle-menu, #menu label.drop-icon {
+    #menu-button {
         display: none;
     }
 
-    #menu ul {
+    #menu-top {
         text-align: right;
+        padding: 10px;
     }
 
-    #menu li {
+    #menu-top > li.icons-top {
+        position: relative;
+        top: 0;
+        right: 100px;
+        margin: 0 15px;
+    }
+
+    #menu-top > li.icons-top, #menu-top > li.icons-social-media {
         display: inline-block;
-        border-width: 0 1px 0 0;
-        font-size: 1.2rem;
     }
 
-    #menu > ul > li > img.icons-top {
-        width: 13px;
-        height: 13px;
-        margin-right: 5px;
-    }
-
-    #menu > ul > li > a > img.icons-social-media {
-        width: 15px;
-        height: 15px;
+    #menu-top {
+        height: auto !important;
     }
 }
-
-/* div > ul > li > img */
-/* div#topnav-dropdown > ul > li.icons-top > img */
-/* div.topnav.response > ul > li.icons-top > img */
