@@ -3,16 +3,6 @@ html {
     font-size: 12px; /* standaard font-size voor de hele htnml */
 }
 
-/* @media (min-width: 678px) {
-    hier zal uiteindelijk de styling komen voor groter dan 678px
-} */
-
-
-/*
-    mobile-first: eerst de website maken voor op mobiele grootte
-    in de media query komt dan alle styling voor als het scherm groter is dan voor op de mobiel
-*/
-
 body {
     background-color: lightgrey;
     margin: 0;
@@ -20,60 +10,84 @@ body {
 }
 
 
+/* MOBILE VERSION */
+#menu-first {
+    width: 100%;
+    background-color: #EBD84C;
+}
 
-/* div > ul > li > img */
-/* div#topnav-dropdown > ul > li.icons-top > img */
-/* div.topnav.response > ul > li.icons-top > img */
-
-
-#menu-button {
+#menu-first > #menu-button {
     width: 100%;
     background-color: #EBD84C;
     text-align: left;
-    padding: 1em;
+    font-size: 2rem;
+    padding: 2rem;
     cursor: pointer;
+    color: white;
 }
 
-#menu-top {
+#menu-first > #menu-top {
     list-style-type: none;
     height: 0px;
     overflow: hidden;
     background-color: #EBD84C;
     margin: 0;
+    font-size: 1.5rem;
+    position: relative;
+    top: 0;
+    right: 15em;
 }
 
-/* li {
-    background-color: white;
-} */
+#menu-first > #menu-top > li.icons-top {
+    margin: 1.5rem 0;
+}
 
-#menu-top img.icons-top, #menu-top img.icons-social-media {
-    width: 15px;
-    height: 15px;
+#menu-first > #menu-top > li.icons-social-media {
+    display: inline-block;
+    margin: 1.5rem 0;
+}
+
+#menu-first > #menu-top img.icons-top, #menu-first > #menu-top img.icons-social-media {
+    width: 1.5rem;
+    height: 1.5rem;
     margin-right: 5px;
 }
 
+
+
+/* DESKTOP VERSION */
 @media (min-width: 768px) {
-    #menu-button {
+    #menu-first > #menu-button {
         display: none;
     }
 
-    #menu-top {
+    #menu-first > #menu-top {
         text-align: right;
-        padding: 10px;
+        font-size: 1.2rem;
+        height: auto !important;
     }
 
-    #menu-top > li.icons-top {
+    #menu-first > #menu-top > li.icons-top {
         position: relative;
         top: 0;
-        right: 100px;
-        margin: 0 15px;
+        right: 5em;
+        margin: 1rem;
+        display: flex;
+        justify-content: space-around;
     }
 
-    #menu-top > li.icons-top, #menu-top > li.icons-social-media {
+    #menu-first > #menu-top > li.icons-social-media {
+        margin: 1rem 0;
+
+    }
+
+    #menu-first > #menu-top > li.icons-top, #menu-first > #menu-top > li.icons-social-media {
         display: inline-block;
     }
 
-    #menu-top {
-        height: auto !important;
+    #menu-first > #menu-top img.icons-top, #menu-first > #menu-top img.icons-social-media {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 5px;
     }
 }
