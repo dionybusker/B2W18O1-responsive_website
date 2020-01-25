@@ -16,7 +16,7 @@ body {
     background-color: #EBD84C;
 }
 
-#menu-first > #menu-button {
+#menu-first > .menu-button {
     width: 100%;
     background-color: #EBD84C;
     text-align: left;
@@ -35,7 +35,6 @@ body {
     font-size: 1.5rem;
     position: relative;
     top: 0;
-    right: 15em;
 }
 
 #menu-first > #menu-top > li.icons-top {
@@ -57,7 +56,8 @@ body {
 
 /* DESKTOP VERSION */
 @media (min-width: 768px) {
-    #menu-first > #menu-button {
+    /* FIRST MENU */
+    #menu-first > .menu-button {
         display: none;
     }
 
@@ -65,6 +65,7 @@ body {
         text-align: right;
         font-size: 1.2rem;
         height: auto !important;
+        right: 10%;
     }
 
     #menu-first > #menu-top > li.icons-top {
@@ -86,8 +87,85 @@ body {
     }
 
     #menu-first > #menu-top img.icons-top, #menu-first > #menu-top img.icons-social-media {
-        width: 1.5rem;
-        height: 1.5rem;
-        margin-right: 5px;
+        width: 1.4rem;
+        height: 1.4rem;
+        margin-right: 0.4rem;
+    }
+    /* /FIRST MENU */
+
+    /* SECOND MENU */
+    #menu-second > .menu-button {
+        display: none;
+    }
+    
+    #menu-second {
+        overflow: hidden;
+        background-color: white;
+    }
+
+    #menu-second > ul#menu > li > a {
+        display: block;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    #menu-second > ul#menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: white;
+    }
+
+    #menu-second > ul#menu > li {
+        float: left;
+    }
+
+    #menu-second > ul#menu > li > a, .dropbtn {
+        display: inline-block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    /* dropdown */
+    #menu-second > ul#menu > li > a:hover, .dropdown:hover .dropbtn {
+        background-color: lightgrey;
+    }
+
+    #menu-second > ul#menu > li.dropdown {
+        display: inline-block;
+    }
+
+    #menu-second > ul#menu > li.dropdown > div.dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        z-index: 1;
+    }
+
+    #menu-second > ul#menu > li.dropdown > div.dropdown-content > a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        font-size: 12px;
+    }
+
+    #menu-second > ul#menu > li.dropdown > div.dropdown-content > a:hover {
+        background-color: #f1f1f1;
+        display: block;
+    }
+    
+
+    /* /dropdown */
+    /* /SECOND MENU */
+
+    #header > .logo {
+        width: 35rem;
+        height: auto;
     }
 }
