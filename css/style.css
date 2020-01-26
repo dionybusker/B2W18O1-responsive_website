@@ -11,6 +11,7 @@ body {
 
 
 /* MOBILE VERSION */
+/* eerste menu */
 #menu-first {
     width: 100%;
     background-color: #EBD84C;
@@ -51,7 +52,48 @@ body {
     height: 1.5rem;
     margin-right: 5px;
 }
+/* /eerste menu */
 
+/* tweede menu */
+#menu-second {
+    width: 100%;
+    background-color: #fff;
+}
+
+#menu-second > .menu-button2 {
+    width: 100%;
+    background-color: #fff;
+    text-align: left;
+    font-size: 2rem;
+    padding: 2rem;
+    cursor: pointer;
+    color: black;
+}
+
+#menu-second > #menu {
+    list-style-type: none;
+    height: 0px;
+    overflow: hidden;
+    background-color: #fff;
+    margin: 0;
+    font-size: 1.5rem;
+    position: relative;
+    top: 0;
+}
+
+/* #menu-second > #menu > li {
+    margin: 1.5rem 0;
+} */
+
+#menu-second > #menu > li {
+    display: inline-block;
+    margin: 1.5rem 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 5px;
+}
+
+/* /tweede menu */
 
 
 /* DESKTOP VERSION */
