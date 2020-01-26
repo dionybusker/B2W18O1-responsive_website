@@ -93,76 +93,89 @@ body {
     }
     /* /FIRST MENU */
 
+
+    
     /* SECOND MENU */
-    #menu-second > .menu-button {
+    .menu-button {
         display: none;
     }
-    
-    #menu-second {
-        overflow: hidden;
-        background-color: white;
-    }
 
-    #menu-second > ul#menu > li > a {
-        display: block;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-    }
-
-    #menu-second > ul#menu {
-        list-style-type: none;
+    #menu {
         margin: 0;
-        padding: 0;
-        overflow: hidden;
+    }
+
+    #menu > li {
+        text-decoration: none;
+        font-size: 1.3rem;
+
+        display: inline-block;
+        text-align: center;
+        padding: 16px;
+        width: 12rem;
         background-color: white;
     }
 
-    #menu-second > ul#menu > li {
-        float: left;
+    #menu > li:hover {
+        background-color: lightgray;
     }
 
-    #menu-second > ul#menu > li > a, .dropbtn {
-        display: inline-block;
-        color: black;
-        text-align: center;
-        padding: 14px 16px;
+    #menu > li > a {
         text-decoration: none;
+        color: black;
+        /* padding: 16px; */
     }
+
+    #menu > li > ul.dropdown-content > li {
+        padding: 16px;
+        font-size: 0.9rem;
+        width: 12rem;
+    }
+
+    #menu > li > ul.dropdown-content > li > a {
+        text-decoration: none;
+        color: black;
+    }
+
+
 
     /* dropdown */
-    #menu-second > ul#menu > li > a:hover, .dropdown:hover .dropbtn {
-        background-color: lightgrey;
-    }
-
-    #menu-second > ul#menu > li.dropdown {
-        display: inline-block;
-    }
-
-    #menu-second > ul#menu > li.dropdown > div.dropdown-content {
+    .dropdown-content {
         display: none;
+        list-style-type: none;
+        padding: 0;
         position: absolute;
-        background-color: #f9f9f9;
-        z-index: 1;
+        top: 50px;
+        left: 0;
     }
 
-    #menu-second > ul#menu > li.dropdown > div.dropdown-content > a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-        font-size: 12px;
+    .dropdown-content > li {
+        width: 12rem;
+        background-color: rgb(171, 171, 171);
     }
 
-    #menu-second > ul#menu > li.dropdown > div.dropdown-content > a:hover {
-        background-color: #f1f1f1;
+    .dropdown-content > li:hover {
+        display: block;
+        background-color: white;
+    }
+
+    .dropdown:hover > .dropdown-content {
         display: block;
     }
-    
+
+    .dropdown {
+        position: relative;
+    }
+
+
+
 
     /* /dropdown */
     /* /SECOND MENU */
+
+
+
+
+
 
     #header > .logo {
         width: 35rem;
