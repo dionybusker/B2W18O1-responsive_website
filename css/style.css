@@ -11,13 +11,13 @@ body {
 
 
 /* MOBILE VERSION */
-/* eerste menu */
+/* first menu */
 #menu-first {
     width: 100%;
     background-color: #EBD84C;
 }
 
-#menu-first > .menu-button {
+#menu-first > #menu-button {
     width: 100%;
     background-color: #EBD84C;
     text-align: left;
@@ -52,15 +52,15 @@ body {
     height: 1.5rem;
     margin-right: 5px;
 }
-/* /eerste menu */
+/* /first menu */
 
-/* tweede menu */
+/* second menu */
 #menu-second {
     width: 100%;
     background-color: #fff;
 }
 
-#menu-second > .menu-button2 {
+#menu-second > #menu-button2 {
     width: 100%;
     background-color: #fff;
     text-align: left;
@@ -86,14 +86,50 @@ body {
 } */
 
 #menu-second > #menu > li {
-    display: inline-block;
-    margin: 1.5rem 0;
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-right: 5px;
+    /* display: inline-block; */
+    margin: 1rem 0;
+    width: 100%;
+    height: 2.5em;
+    /* margin-right: 5px; */
 }
 
-/* /tweede menu */
+/* dropdown */
+.dropdown-content {
+    display: none;
+    list-style-type: none;
+    /* padding: 0; */
+    /* position: absolute;
+    top: 50px;
+    left: 0; */
+}
+
+/* .dropdown-content > li {
+    width: 12rem;
+}
+
+.dropdown-content > li:hover {
+    display: block;
+}
+
+.dropdown:hover > .dropdown-content {
+    display: block;
+}
+
+.dropdown {
+    position: relative;
+} */
+
+.dropdown > .dropbtn {
+    width: 100%;
+    background-color: #fff;
+    text-align: left;
+    font-size: 2rem;
+    padding: 2rem;
+    cursor: pointer;
+    color: black;
+}
+/* /dropdown */
+/* /second menu */
 
 
 /* DESKTOP VERSION */
