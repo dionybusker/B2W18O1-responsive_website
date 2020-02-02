@@ -24,7 +24,7 @@ function showSecondMenu() {
     }
 }
 
-var dropdown = document.getElementsByClassName("dropbtn")[0];
+var dropdown = document.getElementById("car-dropbtn");
     dropdown.setAttribute("onclick", "showDropdown()");
 
 function showDropdown() {
