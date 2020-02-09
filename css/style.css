@@ -185,12 +185,18 @@ body {
         display: none;
     }
 
+    #menu-second {
+        width: 80rem;
+        position: relative;
+        bottom: 7.5rem;
+        left: 45rem;
+    }
+
     #menu-second > #menu {
         /* font-size: 1.2rem; */
         height: auto !important;
         display: inline-block;
         margin: 0;
-        width: 100%;
         overflow: hidden;
     }
 
@@ -204,9 +210,9 @@ body {
         margin: 0 10px;
         float: left;
         text-align: center;
-        position: relative;
+        /* position: relative;
         bottom: 0;
-        left: 510px;
+        left: 510px; */
     }
 
     #menu-second > #menu > li > a {
@@ -273,7 +279,7 @@ body {
     #header {
         background-color: white;
         width: 100%;
-        height: auto;
+        height: 12.5em;
     }
 
 
@@ -284,5 +290,12 @@ body {
         position: relative;
         top: 0;
         left: 200px;
+        z-index: 1;
+    }
+
+    img.slide {
+        width: 100%;
+        height: auto;
+        z-index: 0;
     }
 }
