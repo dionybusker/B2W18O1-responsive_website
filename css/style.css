@@ -11,6 +11,10 @@ body {
 
 
 /* MOBILE VERSION */
+#container {
+    margin: 10px 15px;
+}
+
 /* first menu */
 #menu-first {
     width: 100%;
@@ -18,7 +22,7 @@ body {
 }
 
 #menu-first > #menu-button {
-    width: 100%;
+    /* width: 100%; */
     background-color: #EBD84C;
     text-align: left;
     font-size: 2rem;
@@ -61,7 +65,7 @@ body {
 }
 
 #menu-second > #menu-button2 {
-    width: 100%;
+    /* width: 100%; */
     background-color: #fff;
     text-align: left;
     font-size: 2rem;
@@ -99,23 +103,28 @@ body {
 }
 
 /* dropdown */
-.dropdown-content {
+/* .dropdown-content {
+    height: 0px;
     display: none;
     list-style-type: none;
-    /* padding: 0; */
-    /* position: absolute;
-    top: 50px;
-    left: 0; */
-}
-
-
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 15rem;
+} */
 
 /* .dropdown-content > li {
-    width: 12rem;
+    width: 15rem;
+} */
+
+/* .dropdown-content > li:hover {
+    display: block;
+    background-color: lightgrey;
 }
 
-.dropdown-content > li:hover {
-    display: block;
+.dropdown-content > li > a {
+    text-decoration: none;
+    color: black;
 }
 
 .dropdown:hover > .dropdown-content {
@@ -126,17 +135,95 @@ body {
     position: relative;
 } */
 
-.dropdown > .dropbtn {
+/* .dropdown > .dropbtn {
     width: 100%;
     background-color: #fff;
     text-align: left;
-    /* font-size: 2rem; */
-    /* padding: 2rem; */
+    font-size: 2rem;
+    padding: 2rem;
     cursor: pointer;
     color: black;
-}
+} */
 /* /dropdown */
 /* /second menu */
+
+.logo {
+    width: 22rem;
+    float: right;
+    position: relative;
+    top: 0.3rem;
+    right: 4rem;
+}
+
+hr {
+    border-top: 1px solid lightgrey;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+main {
+    background-color: white;
+    padding-bottom: 1rem;
+}
+
+main > img.slides {
+    width: 100%;
+}
+
+main > div {
+    width: 90%;
+    margin: 1rem auto;
+}
+
+main img.icons {
+    width: 3rem;
+    height: auto;
+    /* color: #545454; */
+    margin-left: 3rem;
+}
+
+main h2 {
+    display: inline-block;
+    margin: 1rem;
+    font-size: 3rem;
+}
+
+main p {
+    font-size: 1.5rem;
+    width: 90%;
+    margin: 2rem auto;
+}
+
+main > div#proefles > p > button {
+    height: auto;
+    background-color: #F7C244;
+    border: none;
+    width: 100%;
+    font-size: 2rem;
+    padding: 1.5rem;
+    margin: 2rem 0;
+}
+
+main > div#proefles > p > button:hover {
+    cursor: pointer;
+}
+
+main > iframe {
+    width: 80%;
+    height: 30em;
+    position: relative;
+    top: 0;
+    left: 5em;
+}
+
+footer {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    padding: 1em 0;
+    border-top: 1px dashed lightgrey;
+}
 
 
 /* DESKTOP VERSION */
@@ -187,6 +274,7 @@ body {
 
     #menu-second {
         width: 80rem;
+        height: 0;
         position: relative;
         bottom: 7.5rem;
         left: 45rem;
@@ -233,7 +321,7 @@ body {
         background-color: lightgray;
     }
 
-    #menu-second > #menu > li > ul.dropdown-content > li {
+    /* #menu-second > #menu > li > ul.dropdown-content > li {
         padding: 16px 5px;
         font-size: 0.9rem;
         width: 12rem;
@@ -242,10 +330,10 @@ body {
     #menu-second > #menu > li > ul.dropdown-content > li > a {
         text-decoration: none;
         color: black;
-    }
+    } */
 
     /* dropdown */
-    .dropdown-content {
+    /* .dropdown-content {
         display: none;
         list-style-type: none;
         padding: 0;
@@ -270,7 +358,7 @@ body {
 
     .dropdown {
         position: relative;
-    }
+    } */
     /* /dropdown */
     /* /SECOND MENU */
 
@@ -287,10 +375,11 @@ body {
         width: 30rem;
         height: auto;
         padding: 20px 0;
-        position: relative;
+        /* position: relative;
         top: 0;
-        left: 200px;
+        left: 200px; */
         z-index: 1;
+        float: left;
     }
 
     img.slide {
