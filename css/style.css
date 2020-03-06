@@ -205,7 +205,7 @@ main > #main-grid > div#proeflessen > p > button {
     margin: 2rem 0;
 }
 
-main > #main-grid > div#proefles > p > button:hover {
+main > #main-grid > div#proeflessen > p > button:hover {
     cursor: pointer;
 }
 
