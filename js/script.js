@@ -23,16 +23,3 @@ function showSecondMenu() {
         menu.style.height = "0px";
     }
 }
-
-// var dropdown = document.getElementById("car-dropbtn");
-//     dropdown.setAttribute("onclick", "showDropdown()");
-
-// function showDropdown() {
-//     var dropdownMenu = document.getElementsByClassName("dropdown-content")[0];
-
-//     if (dropdownMenu.style.height == "0px" || dropdownMenu.style.height == "") {
-//         dropdownMenu.style.height = "auto";
-//     } else {
-//         dropdownMenu.style.height = "0px";
-//     }
-// }

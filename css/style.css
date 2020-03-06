@@ -22,7 +22,6 @@ body {
 }
 
 #menu-first > #menu-button {
-    /* width: 100%; */
     background-color: #EBD84C;
     text-align: left;
     font-size: 2rem;
@@ -58,6 +57,7 @@ body {
 }
 /* /first menu */
 
+
 /* second menu */
 #menu-second {
     width: 100%;
@@ -65,7 +65,6 @@ body {
 }
 
 #menu-second > #menu-button2 {
-    /* width: 100%; */
     background-color: #fff;
     text-align: left;
     font-size: 2rem;
@@ -85,67 +84,18 @@ body {
     top: 0;
 }
 
-/* #menu-second > #menu > li {
-    margin: 1.5rem 0;
-} */
-
 #menu-second > #menu > li {
-    /* display: inline-block; */
     margin: 1rem 0;
     width: 100%;
     height: 2.5em;
-    /* margin-right: 5px; */
 }
 
 #menu > li > a {
     text-decoration: none;
     color: black;
 }
-
-/* dropdown */
-/* .dropdown-content {
-    height: 0px;
-    display: none;
-    list-style-type: none;
-    padding: 0;
-    position: absolute;
-    top: 0;
-    left: 15rem;
-} */
-
-/* .dropdown-content > li {
-    width: 15rem;
-} */
-
-/* .dropdown-content > li:hover {
-    display: block;
-    background-color: lightgrey;
-}
-
-.dropdown-content > li > a {
-    text-decoration: none;
-    color: black;
-}
-
-.dropdown:hover > .dropdown-content {
-    display: block;
-}
-
-.dropdown {
-    position: relative;
-} */
-
-/* .dropdown > .dropbtn {
-    width: 100%;
-    background-color: #fff;
-    text-align: left;
-    font-size: 2rem;
-    padding: 2rem;
-    cursor: pointer;
-    color: black;
-} */
-/* /dropdown */
 /* /second menu */
+
 
 .logo {
     width: 22rem;
@@ -179,7 +129,6 @@ main > div {
 main img.icons {
     width: 3rem;
     height: auto;
-    /* color: #545454; */
     margin-left: 3rem;
 }
 
@@ -274,7 +223,6 @@ footer {
     /* /FIRST MENU */
 
 
-
     /* SECOND MENU */
     #menu-second > #menu-button2 {
         display: none;
@@ -289,37 +237,24 @@ footer {
     }
 
     #menu-second > #menu {
-        /* font-size: 1.2rem; */
         height: auto !important;
         display: inline-block;
         margin: 0;
         overflow: hidden;
     }
 
-    /* #car-dropbtn {
-        display: none;
-    } */
-
     #menu-second > #menu > li {
-        /* display: inline; */
         width: 13rem;
         margin: 0 10px;
         float: left;
         text-align: center;
-        /* position: relative;
-        bottom: 0;
-        left: 510px; */
     }
 
     #menu-second > #menu > li > a {
         text-decoration: none;
         color: black;
-        /* padding: 16px; */
-        /* text-decoration: none; */
         font-size: 1.2rem;
-
         display: block;
-        /* text-align: center; */
         padding: 16px 2px;
         width: 12.5rem;
         background-color: white;
@@ -328,48 +263,7 @@ footer {
     #menu-second > #menu > li > a:hover {
         background-color: lightgray;
     }
-
-    /* #menu-second > #menu > li > ul.dropdown-content > li {
-        padding: 16px 5px;
-        font-size: 0.9rem;
-        width: 12rem;
-    }
-
-    #menu-second > #menu > li > ul.dropdown-content > li > a {
-        text-decoration: none;
-        color: black;
-    } */
-
-    /* dropdown */
-    /* .dropdown-content {
-        display: none;
-        list-style-type: none;
-        padding: 0;
-        position: absolute;
-        top: 50px;
-        left: 0;
-    }
-
-    .dropdown-content > li {
-        width: 12rem;
-        background-color: rgb(171, 171, 171);
-    }
-
-    .dropdown-content > li:hover {
-        display: block;
-        background-color: white;
-    }
-
-    .dropdown:hover > .dropdown-content {
-        display: block;
-    }
-
-    .dropdown {
-        position: relative;
-    } */
-    /* /dropdown */
     /* /SECOND MENU */
-
 
 
     #header {
@@ -420,9 +314,4 @@ footer {
         width: 100%;
         height: 60em;
     }
-
-    /* div#main-grid > div#proefles, div#main-grid > div#locaties, div#main-grid > div#rijlessen {
-        width: 25%;
-        display: inline-block;
-    } */
 }
