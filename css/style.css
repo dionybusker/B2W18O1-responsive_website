@@ -195,7 +195,7 @@ main p {
     margin: 2rem auto;
 }
 
-main > div#proefles > p > button {
+main > #main-grid > div#proeflessen > p > button {
     height: auto;
     background-color: #F7C244;
     border: none;
@@ -205,16 +205,13 @@ main > div#proefles > p > button {
     margin: 2rem 0;
 }
 
-main > div#proefles > p > button:hover {
+main > #main-grid > div#proefles > p > button:hover {
     cursor: pointer;
 }
 
-main > iframe {
-    width: 80%;
+main > #main-grid > #video {
+    width: 100%;
     height: 30em;
-    position: relative;
-    top: 0;
-    left: 5em;
 }
 
 footer {
@@ -228,7 +225,18 @@ footer {
 
 /* DESKTOP VERSION */
 @media (min-width: 768px) {
+    #container {
+        margin: 0;
+    }
+
     /* FIRST MENU */
+    #menu-first {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+    }
+
     #menu-first > #menu-button {
         display: none;
     }
@@ -368,16 +376,16 @@ footer {
         background-color: white;
         width: 100%;
         height: 12.5em;
+        margin-top: 44px;
     }
-
 
     #header > .logo {
         width: 30rem;
         height: auto;
         padding: 20px 0;
-        /* position: relative;
+        position: relative;
         top: 0;
-        left: 200px; */
+        left: 200px;
         z-index: 1;
         float: left;
     }
@@ -387,4 +395,34 @@ footer {
         height: auto;
         z-index: 0;
     }
+
+    main h2 {
+        display: inline-block;
+        margin: 1rem;
+        font-size: 2rem;
+    }
+
+    #main-grid {
+        display: grid;
+        grid-template-areas: "proefles locatie rijles"
+                             "video video video";
+        grid-template-rows: minmax(10px, auto);
+        grid-template-columns: repeat(3, 1fr);
+        width: 75%;
+    }
+
+    #proeflessen { grid-area: proefles; margin: 0 10px; }
+    #locaties { grid-area: locatie; margin: 0 10px; }
+    #rijlessen { grid-area: rijles; margin: 0 10px; }
+
+    main > #main-grid > #video {
+        grid-area: video;
+        width: 100%;
+        height: 60em;
+    }
+
+    /* div#main-grid > div#proefles, div#main-grid > div#locaties, div#main-grid > div#rijlessen {
+        width: 25%;
+        display: inline-block;
+    } */
 }
